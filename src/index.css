@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-turmeric-gold: #DA8A00;
+  --color-chili-red: #8B2612;
+  --color-cardamom-green: #4A5D23;
+  --color-peppercorn-black: #1A1A1A;
+  --color-saffron-cream: #FDF9F3;
+  --color-terracotta: #B35B42;
+  --color-verified-teal: #2D6A4F;
+  --color-warning-amber: #E67E22;
+  
+  --color-surface: #FDF9F4;
+  --color-surface-dim: #DDD9D5;
+  --color-surface-bright: #FDF9F4;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-low: #F7F3EE;
+  --color-surface-container: #F1EDE8;
+  --color-surface-container-high: #EBE8E3;
+  --color-surface-container-highest: #E6E2DD;
+  
+  --color-on-surface: #1C1C19;
+  --color-on-surface-variant: #534434;
+  --color-outline: #857462;
+  --color-outline-variant: #D8C3AE;
+
+  --color-primary: #865300;
+  --color-primary-container: #DA8A00;
+  --color-on-primary: #FFFFFF;
+  --color-on-primary-container: #4B2D00;
+  --color-primary-fixed-dim: #FFB961;
+
+  --color-secondary: #A63A24;
+  --color-secondary-container: #FD795D;
+  --color-on-secondary: #FFFFFF;
+
+  --color-tertiary: #52652A;
+  --color-tertiary-container: #8EA462;
+  --color-on-tertiary-container: #283902;
+  --color-on-tertiary: #FFFFFF;
+
+  --color-error: #BA1A1A;
+  --color-error-container: #FFDAD6;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Material symbols utility */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.splash-gradient {
+  background: linear-gradient(180deg, rgba(253, 249, 243, 0) 0%, rgba(253, 249, 243, 0.9) 60%, rgba(253, 249, 243, 1) 100%);
+}
+
+.otp-input {
+  width: 3.25rem;
+  height: 3.75rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  border: 1.5px solid #1A1A1A;
+  border-radius: 0.25rem;
+  background-color: #FDF9F3;
+  color: #1A1A1A;
+  transition: all 0.2s ease;
+}
+
+.otp-input:focus {
+  outline: none;
+  border-color: #4A5D23;
+  box-shadow: 0 0 0 3px rgba(74, 93, 35, 0.2);
+}

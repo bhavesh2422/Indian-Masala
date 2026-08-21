@@ -1,0 +1,6 @@
+{
+  "name": "MasalaTrace",
+  "description": "Farm-to-fork spice traceability and producer onboarding platform connecting authentic Indian spice growers to global buyers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
